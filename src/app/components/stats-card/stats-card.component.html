@@ -1,0 +1,5 @@
+<div class="statsGameWrapper" *ngIf="game.min !== null">
+  <!--<div class="itemGames">{{ game.date }}</div>-->
+  <div class="itemGames">{{ game.min }}</div>
+  <div class="itemGames my_class" [ngClass]="{'cover': game.cover}">{{ game.total }}</div>
+</div>

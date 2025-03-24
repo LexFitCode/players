@@ -1,0 +1,16 @@
+<div class="oddCard" *ngIf="odd !== undefined">
+  <span class="title">{{odd.market}}</span>
+  <div class="white">
+    <span class="line">{{ odd.line }}</span>
+    <div class="s">
+      <div class="oucol">
+        <span>+</span>
+        <span>{{ odd.overOdd }}</span>
+      </div>
+      <div class="oucol">
+        <span>-</span>
+        <span>{{ odd.underOdd }}</span>
+      </div>
+    </div>
+  </div>
+</div>

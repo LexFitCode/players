@@ -1,0 +1,27 @@
+.statsGameWrapper{
+  display: flex;
+  flex-direction: column;
+  margin: 2px 10px;
+}
+.itemGames{
+  margin: 2px;
+  padding: 2px;
+  align-self: center;
+}
+.my_class{
+    min-width: 17px;
+    min-height: 17px;
+    justify-content: center;
+    display: flex;
+    border: 1px solid rgba(133,158,118,0.40);
+    border-radius: 20px;
+}
+.cover{
+  background-color: white;
+
+  color: black;
+}
+
+.mt-10{
+  padding-top: 10px;
+}

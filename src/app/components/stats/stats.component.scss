@@ -1,0 +1,38 @@
+.oddWrapper{
+    display: flex;
+    margin: 10px;
+    min-height: 65px;
+    justify-content: center;
+    align-items: center;
+}
+.glass{
+  background: rgba( 45, 85, 29, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 8.5px );
+-webkit-backdrop-filter: blur( 8.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.gamesWrapper{
+  display: flex;
+  flex-direction: column;
+}
+.nameWrapper{
+  grid-area: 1 / 1 / 2 / 2;
+}
+.gameWrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  min-height: 100px;
+  margin: 10px;
+}
+.my_class{
+  border-radius: 10px;
+  color: white;
+  background: rgba(21, 63, 1, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(133,158,118,0.25);
+}

@@ -1,0 +1,8 @@
+  <div
+    *ngFor="let item of players"
+    (click)="statsPlayer(item.name)"
+    class="playerCard"
+  >
+    <span class="playerName">{{ item.name }}</span>
+    <span class="playerTeam"> {{ item.team }}</span>
+  </div>

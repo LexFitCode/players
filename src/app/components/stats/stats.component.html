@@ -1,0 +1,25 @@
+<div  class="oddWrapper " *ngIf="player?.line !== ''" [ngClass]="{'glass': player?.line}">
+  <app-odd-card [odd]="player"></app-odd-card>
+  <div class="">
+    <div class="gameWrapper" *ngIf="player !== undefined" [ngClass]="{'my_class': coverLast}">
+      <span class="mt-10">Ultimos cinco juegos</span>
+      <div class="oddWrapper">
+        <app-stats-card [game]="player.stats.game1"></app-stats-card>
+        <app-stats-card [game]="player.stats.game2"></app-stats-card>
+        <app-stats-card [game]="player.stats.game3"></app-stats-card>
+        <app-stats-card [game]="player.stats.game4"></app-stats-card>
+        <app-stats-card [game]="player.stats.game5"></app-stats-card>
+      </div>
+    </div>
+    <div class="gameWrapper" *ngIf="player?.statsVs?.game1?.min !== null" [ngClass]="{'my_class': coverVs}">
+      <span class="mt-10" >Ultimos cinco juegos contra</span>
+      <div class="oddWrapper">
+        <app-stats-card [game]="player.statsVs.game1"></app-stats-card>
+        <app-stats-card [game]="player.statsVs.game2"></app-stats-card>
+        <app-stats-card [game]="player.statsVs.game3"></app-stats-card>
+        <app-stats-card [game]="player.statsVs.game4"></app-stats-card>
+        <app-stats-card [game]="player.statsVs.game5"></app-stats-card>
+      </div>
+    </div>
+  </div>
+</div>

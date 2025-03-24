@@ -103,6 +103,18 @@
             ],
             "scripts": []
           }
+        },
+        "e2e": {
+          "builder": "@puppeteer/ng-schematics:puppeteer",
+          "options": {
+            "devServerTarget": "playerprops:serve",
+            "testRunner": "jasmine"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "playerprops:serve:production"
+            }
+          }
         }
       }
     }

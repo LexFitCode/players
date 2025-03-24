@@ -1,0 +1,49 @@
+
+.oddCard {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  width: 110px;
+  height: 160px;
+  margin: 10px;
+  padding: 5px;
+  background: rgb(4, 56, 3, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(133,158,118,0.25);
+}
+.line{
+  font-size: 25px;
+}
+.oucol{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+}
+.s{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+
+.title{
+  display: flex;
+  height: 50px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.white{
+    display: flex;
+    background-color: RGB(15, 45, 2);
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 8px;
+}
