@@ -25,7 +25,6 @@ export class MlbComponent implements OnInit {
   setPitchersApi(){
     this.PitchersService.getPitcherVs().subscribe((data)=>{
       this.pitchers = (data)
-      console.log(data)
     })
   }
   parse(data: any){

@@ -67,5 +67,7 @@
   </div>
 
 </div>
-
+<app-games
+[games]="gamesBsb"
+(newItemEvent)="playersFromGames($event)"></app-games>
 <app-mlb></app-mlb>
