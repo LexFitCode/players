@@ -24,6 +24,7 @@ export class GamesComponent implements OnInit {
     })
   }
   playersToFollow(home: string, away: string) {
+    console.log(home, away)
     this.playersToFollowPersonalData = [];
     const names = this.playersIcons;
     for (const property in names) {

@@ -1,13 +1,13 @@
 <div class="gamesWrapper">
   <div
     *ngFor="let item of games"
-    (click)="playersToFollow(item.away, item.home)"
+    (click)="playersToFollow(item.awayName, item.homeName)"
     class="card"
   >
     <span>{{ item.hour }}</span>
     <div class="">
-      <img src="{{ item.awayLogo }}" alt="{{ item.away }}" />
-      <img src="{{ item.homeLogo }}" alt="{{ item.home }}" />
+      <img src="{{ item.awayLogo }}" alt="{{ item.awayName }}" />
+      <img src="{{ item.homeLogo }}" alt="{{ item.homeName }}" />
     </div>
   </div>
 </div>
