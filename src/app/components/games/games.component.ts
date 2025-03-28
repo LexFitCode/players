@@ -21,7 +21,6 @@ export class GamesComponent implements OnInit {
   setIconsApi(){
     this.PlayersService.getIcons().subscribe((data)=>{
       this.playersIcons = data
-      console.log(data)
     })
   }
   playersToFollow(home: string, away: string) {

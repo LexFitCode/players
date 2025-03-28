@@ -1,68 +1,71 @@
-  <app-games
-    [games]="games"
-    (newItemEvent)="playersFromGames($event)"></app-games>
-  <div class="mainWrapper">
-    <div class="playersWrapper">
-      <app-players
-        (newItemEvent)="playerFromPlayer($event)"
-        [players]="playersToFollowPersonalData"></app-players>
-    </div>
+<app-games
+[games]="games"
+(newItemEvent)="playersFromGames($event)"></app-games>
+<div class="mainWrapper">
+<div class="playersWrapper">
+  <app-players
+    (newItemEvent)="playerFromPlayer($event)"
+    [players]="playersToFollowPersonalData"></app-players>
+</div>
 
-    <div>
-      <div>
-        <h2 >{{ namePlayer }}</h2>
-      </div>
-      <div class="statsWrapper">
-        <app-stats
-          [player]="playerOddsB.points"
-          [namePlayer]="namePlayer"
-          [coverLast]="coverPointsLast"
-          [coverVs]="coverPointsVs"></app-stats>
-          <app-stats
-          [player]="playerOddsB.menorPts"
-          [namePlayer]="namePlayer"
-          [coverLast]="coverMenorPtsLast"
-          [coverVs]="coverMenorPtsVs"></app-stats>
-          <!--<app-stats
-          [player]="playerOddsB.mayorPts"
-          [namePlayer]="namePlayer"
-          [coverLast]="coverMayorPtsLast"
-          [coverVs]="coverMayorPtsVs"></app-stats>-->
-          <app-stats
-          [player]="playerOddsB.assist"
-          [namePlayer]="namePlayer"
-          [coverLast]="coverAssistLast"
-          [coverVs]="coverAssistVs"></app-stats>
-          <app-stats
-          [player]="playerOddsB.rebound"
-          [namePlayer]="namePlayer"
-          [coverLast]="coverReboundLast"
-          [coverVs]="coverReboundVs"></app-stats>
-          <app-stats
-          [player]="playerOddsB.pra"
-          [namePlayer]="namePlayer"
-          [coverLast]="coverPointsAssistReboundLast"
-          [coverVs]="coverPointsAssistReboundVs"></app-stats>
-          <app-stats
-          [player]="playerOddsB.pa"
-          [namePlayer]="namePlayer"
-          [coverLast]="coverPointsAssistLast"
-          [coverVs]="coverPointsAssisttVs"></app-stats>
-          <app-stats
-          [player]="playerOddsB.pr"
-          [namePlayer]="namePlayer"
-          [coverLast]="coverPointsReboundLast"
-          [coverVs]="coverPointsReboundtVs"></app-stats>
-          <app-stats
-          [player]="playerOddsB.ar"
-          [namePlayer]="namePlayer"
-          [coverLast]="coverAssistReboundLast"
-          [coverVs]="coverAssistReboundVs"></app-stats>
-          <app-stats
-          [player]="playerOddsB.triples"
-          [namePlayer]="namePlayer"
-          [coverLast]="covertriplesLast"
-          [coverVs]="covertriplesVs"></app-stats>
-      </div>
-
+<div>
+  <div>
+    <h2 >{{ namePlayer }}</h2>
   </div>
+  <div class="statsWrapper">
+    <app-stats
+      [name] = "namePlayer"
+      [player]="playerOddsB.points"
+      [namePlayer]="namePlayer"
+      [coverLast]="coverPointsLast"
+      [coverVs]="coverPointsVs"></app-stats>
+      <app-stats
+      [player]="playerOddsB.menorPts"
+      [namePlayer]="namePlayer"
+      [coverLast]="coverMenorPtsLast"
+      [coverVs]="coverMenorPtsVs"></app-stats>
+      <!--<app-stats
+      [player]="playerOddsB.mayorPts"
+      [namePlayer]="namePlayer"
+      [coverLast]="coverMayorPtsLast"
+      [coverVs]="coverMayorPtsVs"></app-stats>-->
+      <app-stats
+      [player]="playerOddsB.assist"
+      [namePlayer]="namePlayer"
+      [coverLast]="coverAssistLast"
+      [coverVs]="coverAssistVs"></app-stats>
+      <app-stats
+      [player]="playerOddsB.rebound"
+      [namePlayer]="namePlayer"
+      [coverLast]="coverReboundLast"
+      [coverVs]="coverReboundVs"></app-stats>
+      <app-stats
+      [player]="playerOddsB.pra"
+      [namePlayer]="namePlayer"
+      [coverLast]="coverPointsAssistReboundLast"
+      [coverVs]="coverPointsAssistReboundVs"></app-stats>
+      <app-stats
+      [player]="playerOddsB.pa"
+      [namePlayer]="namePlayer"
+      [coverLast]="coverPointsAssistLast"
+      [coverVs]="coverPointsAssisttVs"></app-stats>
+      <app-stats
+      [player]="playerOddsB.pr"
+      [namePlayer]="namePlayer"
+      [coverLast]="coverPointsReboundLast"
+      [coverVs]="coverPointsReboundtVs"></app-stats>
+      <app-stats
+      [player]="playerOddsB.ar"
+      [namePlayer]="namePlayer"
+      [coverLast]="coverAssistReboundLast"
+      [coverVs]="coverAssistReboundVs"></app-stats>
+      <app-stats
+      [player]="playerOddsB.triples"
+      [namePlayer]="namePlayer"
+      [coverLast]="covertriplesLast"
+      [coverVs]="covertriplesVs"></app-stats>
+  </div>
+
+</div>
+
+<app-mlb></app-mlb>

@@ -106,6 +106,7 @@ export class AppComponent implements OnInit {
   ){}
   ngOnInit(): void {
     this.setGamesApi()
+    console.log(this.games)
     //this.games = Object.values(games) //offline
   }
 
@@ -134,8 +135,8 @@ export class AppComponent implements OnInit {
     this.coverReboundLast = this.setCover(this.playerOddsB.rebound.stats)
     this.coverReboundVs = this.setCover(this.playerOddsB.rebound.statsVs)
 
-    this.covertriplesLast = this.setCover(this.playerOddsB.triples.stats)
-    this.covertriplesVs = this.setCover(this.playerOddsB.triples.statsVs)
+    this.covertriplesLast = this.setCover(this.playerOddsB.triples?.stats)
+    this.covertriplesVs = this.setCover(this.playerOddsB.triples?.statsVs)
 
     this.coverPointsReboundLast = this.setCover(this.playerOddsB.pr.stats)
     this.coverPointsReboundtVs = this.setCover(this.playerOddsB.pr.statsVs)

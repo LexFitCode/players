@@ -6,6 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./stats.component.scss']
 })
 export class StatsComponent implements OnInit {
+  @Input() name: string = ''
   @Input() player: any
   @Input() namePlayer: any
   @Input() coverLast: boolean = false

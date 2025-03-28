@@ -9,6 +9,8 @@ import { PlayersComponent } from './components/players/players.component';
 import { StatsComponent } from './components/stats/stats.component';
 import { OddCardComponent } from './components/odd-card/odd-card.component';
 import { StatsCardComponent } from './components/stats-card/stats-card.component';
+import { NbaComponent } from './components/nba/nba.component';
+import { MlbComponent } from './components/mlb/mlb.component';
 
 
 
@@ -19,7 +21,9 @@ import { StatsCardComponent } from './components/stats-card/stats-card.component
     PlayersComponent,
     StatsComponent,
     OddCardComponent,
-    StatsCardComponent
+    StatsCardComponent,
+    NbaComponent,
+    MlbComponent
   ],
   imports: [
     BrowserModule,

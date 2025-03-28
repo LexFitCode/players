@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class OddCardComponent implements OnInit {
   @Input() odd: any
+  @Input() name : string = ""
   constructor() { }
 
   ngOnInit(): void {

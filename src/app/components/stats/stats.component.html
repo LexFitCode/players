@@ -1,5 +1,6 @@
 <div  class="oddWrapper " *ngIf="player?.line !== ''" [ngClass]="{'glass': player?.line}">
-  <app-odd-card [odd]="player"></app-odd-card>
+  <app-odd-card [odd]="player"
+  [name] = "namePlayer"></app-odd-card>
   <div class="">
     <div class="gameWrapper" *ngIf="player !== undefined" [ngClass]="{'my_class': coverLast}">
       <span class="mt-10">Ultimos cinco juegos</span>
